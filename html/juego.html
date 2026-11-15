@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/juego.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header class="header1">
+        <H1 style="color: white; text-align: center;">
+            PRACTICAS 
+        </H1>
+        <div class="dropdown">
+          <button onclick="abrirMenu()" class="dropbtn">Páginas ▼</button>
+          <div id="miMenu" class="dropdown-content">
+            <a href="index.html">Inicio</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="juego.html">Juego</a>
+            <a href="estilosjava.html">Estilos</a>
+          </div>
+        </div>
+    </header>
+    <main>
+        <h1>Juego de Piedra, Papel o Tijera</h1>
+        <p style="color: grey;">Elije una opción y juega contra la máquina</p>
+
+        <div class="botones">
+            <button type="button" onclick="juego('piedra')">Piedra</button>
+            <button type="button" onclick="juego('papel')">Papel</button>
+            <button type="button" onclick="juego('tijera')">Tijera</button>
+        </div>
+
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas">Ganadas: 0</p>
+        <p id="empatadas">Empates: 0</p>
+        <p id="derrotas">Derrotas: 0 </p>
+
+        <section id="resultado">
+            <h2>resultado:</h2>
+            <p id=""></p>
+        </section>
+
+        
+        <p id="mensaje"></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de estilo</title>
+
+    <link rel="stylesheet" href="../css/estilojava.css">
+    <link rel="stylesheet" href="../css/oscuro.css" disabled>
+    <link rel="stylesheet" href="../css/infierno.css" disabled>
+
+
+    <script src="../js/estilos.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <H1 style="color: white; text-align: center;">
+            PRACTICAS 
+        </H1>
+        <div class="dropdown">
+          <button onclick="abrirMenu()" class="dropbtn">Páginas ▼</button>
+          <div id="miMenu" class="dropdown-content">
+            <a href="index.html">Inicio</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="juego.html">Juego</a>
+            <a href="estilosjava.html">Estilos</a>
+          </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h1>Cambiar estilos de JavaScript</h1>
+
+        <button class="btn1" onclick="cambiarModo()">Modo claro / Oscuro</button>
+
+        <button class="btn2" onclick="cambiarModoinfierno()">Modo Infierno</button>
+    </main>
+    <hr>
+    <footer>
+        Creada por Ariel
+    </footer>
+</body>
+</html>
